@@ -1,0 +1,71 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>マリンドライブをツイートするボタン</title>
+    <style>
+        .button {
+            border-radius: 5px;
+            display: block;
+            height: 195px;
+            margin: 20px 0;
+            width: 402px;
+        }
+
+        #a5 {
+            display: none;
+            margin: 2000px 0 0;
+        }
+
+        .button div {
+            background-color: rgb(255, 255, 255);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            box-sizing: content-box;
+            height: 193px;
+            width: 400px;
+        }
+    </style>
+    <script>
+        function getRandom() { return ('0000' + Math.floor(Math.random() * 100000)).slice(-5); }
+        window.onload = function () {
+            var href1 = 'https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Frgx_6%2Fstatus%2F814471816668270593%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3';
+            var href2 = 'https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946726722237448193%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3';
+            var href3 = 'https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946775423437770753%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3';
+            var href4 = 'https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946775492908146688%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3';
+            var href5 = 'https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946775537728479232%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3';
+            document.getElementById('a1').addEventListener('click', function () { this.setAttribute('href', href1 + ' ' + getRandom()); });
+            document.getElementById('a2').addEventListener('click', function () { this.setAttribute('href', href2 + ' ' + getRandom()); });
+            document.getElementById('a3').addEventListener('click', function () { this.setAttribute('href', href3 + ' ' + getRandom()); });
+            document.getElementById('a4').addEventListener('click', function () { this.setAttribute('href', href4 + ' ' + getRandom()); });
+            document.getElementById('a5').addEventListener('click', function () { this.setAttribute('href', href5 + ' ' + getRandom()); });
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1>マリンドライブをツイートするボタン</h1>
+        <a id="a1" class="button" target="_blank" href="https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Frgx_6%2Fstatus%2F814471816668270593%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3">
+            <div style="background-image: url(&quot;https://pbs.twimg.com/media/C02Vx6qVIAA9S4-.jpg&quot;);"></div>
+        </a>
+        <a id="a2" class="button" target="_blank" href="https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946726722237448193%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3">
+            <div style="background-image: url(&quot;https://pbs.twimg.com/media/DSNy73FUMAA8eSA.jpg&quot;);"></div>
+        </a>
+        <a id="a3" class="button" target="_blank" href="https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946775423437770753%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3">
+            <div style="background-image: url(&quot;https://pbs.twimg.com/media/DSOfOobVAAA70Sr.jpg&quot;);"></div>
+        </a>
+        <a id="a4" class="button" target="_blank" href="https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946775492908146688%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3">
+            <div style="background-image: url(&quot;https://pbs.twimg.com/media/DSOfStcVwAAbLEp.jpg&quot;);"></div>
+        </a>
+        <a id="a5" class="button" target="_blank" href="https://twitter.com/intent/tweet?lang=ja&amp;text=%20https%3A%2F%2Ftwitter.com%2Ftext_to_image%2Fstatus%2F946775423437770753%2Fphoto%2F1%20https%3A%2F%2Fmarinedrive.azurewebsites.net%2F%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%20%23%E3%83%9E%E3%83%AA%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%92%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%83%9C%E3%82%BF%E3%83%B3">
+            <div style="background-image: url(&quot;https://pbs.twimg.com/media/DSOfVUyU8AAghHS.jpg&quot;);"></div>
+        </a>
+        <p>
+            &copy; 2016
+            <a href="https://twitter.com/rgx_6" target="_blank">rgx</a>
+        </p>
+    </center>
+</body>
+</html>
